@@ -82,3 +82,26 @@ body {
         }
     }
 }
+
+// ------------------------------------------------------- MAIN
+.main {
+    width: 100%;
+    height: 58rem;
+    background-image: url(../img/header/bg.png);
+    &__wrap {
+        @include flexCenter;
+        // outline: 2px solid red;
+        height: 58rem;
+    }
+    &__title {
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 900;
+        width: 55rem;
+        font-size: 7.2rem;
+    }
+    &__logo {
+        width: 29rem;
+    }
+}
+
