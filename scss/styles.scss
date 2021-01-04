@@ -24,11 +24,65 @@ body {
     width: 96%;
 }
 
-// ---------------------------------------------- BEGIN
+// ---------------------------------------------- CONST
+.title {
+    width: 100%;
+    color: $brandColor;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.6rem;
+    margin: 2rem 0;
+}
+
+// ------------------------------------------------ SLICK
+.slider {
+    max-width: 50%;
+    // height: 8rem;
+    // outline: 2px solid red;
+}
+
+.slick-slide {
+    // outline: 2px solid red;
+    border-radius: 25px;
+}
+
+.slick-track {
+    // outline: 2px dashed blue;
+    height: 50rem;
+}
+
+.prewArrow {
+    // outline: 2px solid red;
+    width: 6.5rem;
+    height: 6.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='65' height='64' viewBox='0 0 65 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M65 20C65 8.95431 56.0457 0 45 0H0V64H45C56.0457 64 65 55.0457 65 44V20Z' fill='white'/%3E%3Cpath d='M37 17L16 32.5L37 48' stroke='%235D3721' stroke-width='10' stroke-linejoin='bevel'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.nextArrow {
+    // outline: 2px solid red;
+    width: 6.5rem;
+    height: 6.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='65' height='64' viewBox='0 0 65 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20C0 8.95431 8.95431 0 20 0H65V64H20C8.9543 64 0 55.0457 0 44V20Z' fill='white'/%3E%3Cpath d='M28 17L49 32.5L28 48' stroke='%235D3721' stroke-width='10' stroke-linejoin='bevel'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+// ---------------------------------------------- HEADER
 .header {
     height: 8rem;
     width: 100%;
-    background-color: #5D3721;
+    background-color: $brandColor;
     &__wrap {
         @include flexCenter;
         justify-content: space-between;
@@ -49,7 +103,7 @@ body {
     &__item {
         margin: 0 1rem;
         color: #fff;
-        text-transform: capitalize;
+        // text-transform: capitalize;
         width: 11rem;
         text-align: center;
     }
@@ -67,7 +121,7 @@ body {
         // padding-top: .6rem;
         // outline: 2px solid red;
         @include flexCenter;
-        color: #5D3721;
+        color: $brandColor;
         font-weight: bold;
         text-transform: capitalize;
         &::after {
@@ -88,6 +142,8 @@ body {
     width: 100%;
     height: 58rem;
     background-image: url(../img/header/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     &__wrap {
         @include flexCenter;
         // outline: 2px solid red;
@@ -104,4 +160,19 @@ body {
         width: 29rem;
     }
 }
+
+// -------------------------------------------- ABOUT
+.about {
+    height: 70rem;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__desc {
+        max-width: 45%;
+        font-size: 1.5rem;
+    }
+}
+
+
 

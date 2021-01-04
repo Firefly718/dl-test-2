@@ -325,6 +325,50 @@ body {
   max-width: 1140px;
   width: 96%; }
 
+.title {
+  width: 100%;
+  color: #5D3721;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.6rem;
+  margin: 2rem 0; }
+
+.slider {
+  max-width: 50%; }
+
+.slick-slide {
+  border-radius: 25px; }
+
+.slick-track {
+  height: 50rem; }
+
+.prewArrow {
+  width: 6.5rem;
+  height: 6.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='65' height='64' viewBox='0 0 65 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M65 20C65 8.95431 56.0457 0 45 0H0V64H45C56.0457 64 65 55.0457 65 44V20Z' fill='white'/%3E%3Cpath d='M37 17L16 32.5L37 48' stroke='%235D3721' stroke-width='10' stroke-linejoin='bevel'/%3E%3C/svg%3E%0A");
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer; }
+
+.nextArrow {
+  width: 6.5rem;
+  height: 6.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='65' height='64' viewBox='0 0 65 64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20C0 8.95431 8.95431 0 20 0H65V64H20C8.9543 64 0 55.0457 0 44V20Z' fill='white'/%3E%3Cpath d='M28 17L49 32.5L28 48' stroke='%235D3721' stroke-width='10' stroke-linejoin='bevel'/%3E%3C/svg%3E%0A");
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer; }
+
 .header {
   height: 8rem;
   width: 100%;
@@ -372,7 +416,6 @@ body {
   .header__item {
     margin: 0 1rem;
     color: #fff;
-    text-transform: capitalize;
     width: 11rem;
     text-align: center; }
   .header__cart {
@@ -405,7 +448,9 @@ body {
 .main {
   width: 100%;
   height: 58rem;
-  background-image: url(../img/header/bg.png); }
+  background-image: url(../img/header/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
   .main__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -425,3 +470,16 @@ body {
     font-size: 7.2rem; }
   .main__logo {
     width: 29rem; }
+
+.about {
+  height: 70rem; }
+  .about__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .about__desc {
+    max-width: 45%;
+    font-size: 1.5rem; }
