@@ -1,0 +1,16 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin listClear {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin bgBasic {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
