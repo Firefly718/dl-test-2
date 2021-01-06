@@ -318,7 +318,8 @@ html {
 
 body {
   min-height: 100%;
-  font: 1.5rem/1.6 'Montserrat', sans-serif; }
+  font: 1.5rem/1.6 'Montserrat', sans-serif;
+  overflow-x: hidden; }
 
 .container {
   margin: 0 auto;
@@ -364,6 +365,34 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.item {
+  margin: 0 1rem;
+  color: #fff;
+  width: 11rem;
+  text-align: center; }
+
+.logo-footer {
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in; }
+  .logo-footer:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
 
 .slider {
   max-width: 50%; }
@@ -435,21 +464,6 @@ body {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
-  .header__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .header__item {
-    margin: 0 1rem;
-    color: #fff;
-    width: 11rem;
-    text-align: center; }
   .header__cart {
     background-image: url(../img/header/Subtract.png);
     background-repeat: no-repeat;
@@ -585,7 +599,8 @@ body {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-top: 3rem; }
   .stocks__item {
     width: 26rem;
     background-color: #f2f2f2;
@@ -615,3 +630,27 @@ body {
     border-radius: 25px; }
   .stocks__desc {
     margin: 0 2rem 1rem 2rem; }
+
+.footer {
+  height: 23rem;
+  background-color: #5D3721; }
+  .footer__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3rem; }
+  .footer__nav {
+    margin-left: 7rem; }
+  .footer__item {
+    margin: 0 2rem; }
+  .footer__contacts {
+    color: #fff;
+    padding-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer__contacts--rights {
+      margin: 0 10rem;
+      width: 20rem; }
+    .footer__contacts--dev {
+      width: 20rem; }
