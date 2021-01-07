@@ -3,7 +3,22 @@ $(function(){
   $('.slider').slick({
     autoplay: true,
     prevArrow: '<span class="prewArrow"><span>',
-    nextArrow: '<span class="nextArrow"><span>'
+    nextArrow: '<span class="nextArrow"><span>',
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+    ]
   });
  });
 

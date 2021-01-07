@@ -228,6 +228,13 @@ body {
     max-width: 50%;
     // height: 8rem;
     // outline: 2px solid red;
+    @media screen and (max-width: 1000px) {
+        max-width: 100%;
+    }
+    // @media screen and (max-width: 600px) {
+    //     // display: block;
+    //     // margin-left: 50%;
+    // }
 }
 
 .slick-slide {
@@ -238,6 +245,9 @@ body {
 .slick-track {
     // outline: 2px dashed blue;
     height: 50rem;
+    @media screen and (max-width: 800px) {
+        height: 35rem;
+    }
 }
 
 .prewArrow {
@@ -250,6 +260,11 @@ body {
     transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
+    @media screen and (max-width: 300px) {
+        // bottom: 0%;
+        // transform: none;
+        transform: translateY(150%);
+    }
 }
 
 .nextArrow {
@@ -263,6 +278,11 @@ body {
     transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
+    @media screen and (max-width: 300px) {
+        // bottom: 0%;
+        // transform: none;
+        transform: translateY(150%);
+    }
 }
 
 
@@ -324,7 +344,7 @@ body {
         @include flexCenter;
         // outline: 2px solid red;
         height: 58rem;
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 600px) {
             flex-direction: column;
         }
     }
@@ -360,13 +380,24 @@ body {
 // -------------------------------------------- ABOUT
 .about {
     height: 70rem;
+    @media screen and (max-width: 1000px) {
+        height: auto;
+    }
     &__wrap {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            // outline: 2px solid red;
+        }
     }
     &__desc {
         max-width: 45%;
         font-size: 1.5rem;
+        @media screen and (max-width: 1000px) {
+            max-width: 100%;
+            margin-bottom: 3rem;
+        }
     }
 }
 

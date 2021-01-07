@@ -527,12 +527,18 @@ body {
 
 .slider {
   max-width: 50%; }
+  @media screen and (max-width: 1000px) {
+    .slider {
+      max-width: 100%; } }
 
 .slick-slide {
   border-radius: 25px; }
 
 .slick-track {
   height: 50rem; }
+  @media screen and (max-width: 800px) {
+    .slick-track {
+      height: 35rem; } }
 
 .prewArrow {
   width: 6.5rem;
@@ -546,6 +552,12 @@ body {
   transform: translateY(-50%);
   z-index: 2;
   cursor: pointer; }
+  @media screen and (max-width: 300px) {
+    .prewArrow {
+      -webkit-transform: translateY(150%);
+      -ms-transform: translateY(150%);
+      -o-transform: translateY(150%);
+      transform: translateY(150%); } }
 
 .nextArrow {
   width: 6.5rem;
@@ -560,6 +572,12 @@ body {
   transform: translateY(-50%);
   z-index: 2;
   cursor: pointer; }
+  @media screen and (max-width: 300px) {
+    .nextArrow {
+      -webkit-transform: translateY(150%);
+      -ms-transform: translateY(150%);
+      -o-transform: translateY(150%);
+      transform: translateY(150%); } }
 
 .header {
   height: 8rem;
@@ -631,7 +649,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     height: 58rem; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       .main__wrap {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -665,6 +683,9 @@ body {
 
 .about {
   height: 70rem; }
+  @media screen and (max-width: 1000px) {
+    .about {
+      height: auto; } }
   .about__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -672,9 +693,19 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media screen and (max-width: 1000px) {
+      .about__wrap {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   .about__desc {
     max-width: 45%;
     font-size: 1.5rem; }
+    @media screen and (max-width: 1000px) {
+      .about__desc {
+        max-width: 100%;
+        margin-bottom: 3rem; } }
 
 .rec {
   height: 95rem; }
