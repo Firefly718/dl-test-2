@@ -22,7 +22,7 @@ $(function(){
   });
  });
 
-//  burger-menu (HEADER)
+//  burger-menu (HEADER - index.html)
 $(document).ready(function(){
   $("body > header > div > div > div").click(function(){
     // console.log('есть клик');
@@ -30,7 +30,7 @@ $(document).ready(function(){
   });
 });
 
-// burger-menu (FOOTER)
+// burger-menu (FOOTER - index.html)
 $(document).ready(function(){
   $("#contacts > div > div.footer__menu > div").click(function(){
     console.log('есть клик');

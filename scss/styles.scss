@@ -141,10 +141,13 @@ body {
     }
     @media screen and (max-width: 650px) {
         flex-direction: column;
+        // top: 150%;
+        // right: 50%;
+        // outline: 2px solid red;
     }
 }
 
-// menu (footer)
+// menu (FOOTER) ----------------------------------- !
 #contacts > div > div.footer__menu > nav {
     @media screen and (max-width: 1100px) {
         display: none;
@@ -171,19 +174,22 @@ body {
         width: 40rem;
     }
     @media screen and (max-width: 650px) {
-        top: -65%;
+        top: -115%;
         right: 0;
         width: auto;
         height: auto;
     }
     @media screen and (max-width: 600px) {
-        top: -50%;
+        top: -90%;
+    }
+    @media screen and (max-width: 512px) {
+        top: -85%;
     }
     @media screen and (max-width: 416px) {
-        top: -40%;
+        top: -70%;
     }
     @media screen and (max-width: 305px) {
-        top: -35%;
+        top: -65%;
     }
 }
 
@@ -646,6 +652,9 @@ body {
     }
     &__item {
         margin: 0 2rem;
+        @media screen and (max-width: 650px) {
+            margin-bottom: 2rem;
+        }
     }
     &__contacts {
         color: #fff;
@@ -713,6 +722,9 @@ body {
 .menu-type {
     display: flex;
     margin: 2rem 0;
+    @media screen and (max-width: 900px) {
+        flex-flow: row wrap;
+    }
     &__item {
         margin-right: 4rem;
         background-color: $brandColor;
@@ -723,6 +735,9 @@ body {
         @include flexCenter;
         padding: 0 2rem;
         font-weight: 700;
+        @media screen and (max-width: 900px) {
+            margin-bottom: 2rem;
+        }
         &:first-child {
             &::before {
                 content: '';

@@ -24,6 +24,10 @@
             flex-flow: row wrap;
             justify-content: space-between;
             // outline: 2px solid red;
+            @media screen and (max-width: 815px) {
+                justify-content: space-evenly;
+
+            }
         }
         &__item {
             margin-top: 1rem;
@@ -33,6 +37,10 @@
             width: 26rem;
             height: 34rem;
             // outline: 2px solid red;
+            @media screen and (max-width: 260px) {
+                height: auto;
+                margin-bottom: 2rem;
+            }
         }
         &__value {
             @include flexCenter;

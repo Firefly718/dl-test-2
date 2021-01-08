@@ -470,22 +470,26 @@ body {
 
 @media screen and (max-width: 650px) {
   #contacts > div > div.footer__menu > nav {
-    top: -65%;
+    top: -115%;
     right: 0;
     width: auto;
     height: auto; } }
 
 @media screen and (max-width: 600px) {
   #contacts > div > div.footer__menu > nav {
-    top: -50%; } }
+    top: -90%; } }
+
+@media screen and (max-width: 512px) {
+  #contacts > div > div.footer__menu > nav {
+    top: -85%; } }
 
 @media screen and (max-width: 416px) {
   #contacts > div > div.footer__menu > nav {
-    top: -40%; } }
+    top: -70%; } }
 
 @media screen and (max-width: 305px) {
   #contacts > div > div.footer__menu > nav {
-    top: -35%; } }
+    top: -65%; } }
 
 .item {
   margin: 0 1rem;
@@ -974,6 +978,9 @@ body {
         margin-left: 0rem; } }
   .footer__item {
     margin: 0 2rem; }
+    @media screen and (max-width: 650px) {
+      .footer__item {
+        margin-bottom: 2rem; } }
   .footer__contacts {
     color: #fff;
     padding-top: 2rem;
@@ -1034,6 +1041,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 2rem 0; }
+  @media screen and (max-width: 900px) {
+    .menu-type {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; } }
   .menu-type__item {
     margin-right: 4rem;
     background-color: #5D3721;
@@ -1052,6 +1065,9 @@ body {
     align-items: center;
     padding: 0 2rem;
     font-weight: 700; }
+    @media screen and (max-width: 900px) {
+      .menu-type__item {
+        margin-bottom: 2rem; } }
     .menu-type__item:first-child::before {
       content: '';
       display: -webkit-box;
@@ -1107,12 +1123,21 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    @media screen and (max-width: 815px) {
+      .main-menu .main-menu__wrap {
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly; } }
   .main-menu .main-menu__item {
     margin-top: 1rem;
     border: 1px solid transparent;
     border-radius: 15px;
     width: 26rem;
     height: 34rem; }
+    @media screen and (max-width: 260px) {
+      .main-menu .main-menu__item {
+        height: auto;
+        margin-bottom: 2rem; } }
   .main-menu .main-menu__value {
     display: -webkit-box;
     display: -ms-flexbox;
