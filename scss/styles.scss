@@ -12,7 +12,7 @@ html {
     height: 100%;
     font-size: 10px;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 
 body {
@@ -21,6 +21,7 @@ body {
     overflow-x: hidden;
     // outline: 2px solid green;
 }
+
 
 .container {
     margin: 0 auto;
@@ -800,6 +801,10 @@ body {
 .product {
     height: 55rem;
     margin-top: 3rem;
+    @media screen and (max-width: 1100px) {
+        height: auto;
+        margin-bottom: 4rem;
+    }
     &__gallery {
         height: 48rem;
         width: 40%;
@@ -811,6 +816,19 @@ body {
         // border-radius: 15px;
         // outline: 2px solid red;
         margin-right: 3rem;
+        @media screen and (max-width: 800px) {
+            width: 80%;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 400px) {
+            height: 38rem;
+        }
+        @media screen and (max-width: 300px) {
+            height: 28rem;
+        }
         &--main {
             grid-area: 1 / 1 / 2 / 4;
             background-image: url(../img/product/dish1.png);
@@ -827,6 +845,12 @@ body {
             background-size: 100% 100%;
             height: 70%;
             margin-top: 7rem;
+            @media screen and (max-width: 400px) {
+                margin-top: 5.5rem;
+            }
+            @media screen and (max-width: 300px) {
+                margin-top: 4rem;
+            }
         }
         &--dc {
             grid-area: 2 / 2 / 3 / 3;
@@ -835,6 +859,12 @@ body {
             background-size: 100% 100%;
             height: 70%;
             margin-top: 7rem;
+            @media screen and (max-width: 400px) {
+                margin-top: 5.5rem;
+            }
+            @media screen and (max-width: 300px) {
+                margin-top: 4rem;
+            }
         }
         &--dr {
             grid-area: 2 / 3 / 3 / 4;
@@ -843,16 +873,38 @@ body {
             background-size: 100% 100%;
             height: 70%;
             margin-top: 7rem;
+            @media screen and (max-width: 400px) {
+                margin-top: 5.5rem;
+            }
+            @media screen and (max-width: 300px) {
+                margin-top: 4rem;
+            }
         }
     }
     &__wrap {
         display: flex;
+        @media screen and (max-width: 800px) {
+            flex-direction: column-reverse;
+        }
     }
     &__desc {
         width: 50%;
+        @media screen and (max-width: 800px) {
+            width: 100%;
+        }
     }
     &__title {
         font-size: 4.8rem;
+        @media screen and (max-width: 1100px) {
+            font-size: 4rem;
+            // margin-bottom: 4rem;
+        }
+        @media screen and (max-width: 850px) {
+            font-size: 3rem;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 2.5rem;
+        }
     }
     &__price {
         font-size: 3.6rem;
@@ -886,9 +938,20 @@ body {
             width: 4rem;
             height: 3.4rem;
         }
+        @media screen and (max-width: 400px) {
+            width: 16rem;
+        }
+        @media screen and (max-width: 300px) {
+            width: 6rem;
+            font-size: 0;
+        }
     }
     &__bg {
         bottom: -40%;
+    }
+    &__text {
+
+        padding-bottom: 4rem;
     }
 }
 
