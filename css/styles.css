@@ -320,7 +320,9 @@ html {
 
 body {
   min-height: 100%;
-  font: 1.5rem/1.6 'Montserrat', sans-serif;
+  font: 1.5rem/1.6 'Montserrat', sans-serif; }
+
+body, html {
   overflow-x: hidden; }
 
 .container {
